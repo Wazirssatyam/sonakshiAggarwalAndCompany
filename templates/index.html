@@ -19,6 +19,13 @@
     margin-top: 12%;
     transition: 1.5s;
 }
+#titleBar {
+padding-bottom: 14%;
+}
+#titleBar .toggle:before{
+top: 20px !important;
+    left: 10px !important;
+}
 .dropotron > li a, .dropotron > li span {
     border: 0;
     color: rgb(0 0 0);
@@ -88,6 +95,19 @@ ul li {
     padding-bottom: 1em;
     font-family: Poppins, sans-serif;
 }
+.subscribe{
+background: #ffffff73 !important;
+}
+.submit-btn{
+    color: #000 !important;
+}
+.button{
+box-shadow: inset 2px -2px 4px 2px rgba(255, 255, 255, 0.3) !important;
+transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
+}
+.button:hover{
+color:#ffffff !important;
+}
 </style>
 	</head>
 	<body class="is-preload landing">
@@ -101,7 +121,7 @@ ul li {
     font-family: poppins, sans-serif;">
 					<h1 id="logo"><a href="index.html"></a><img style="width: 125px;height: 76px;"src= "{%static 'logo.png'%}"></h1>
 					<nav id="nav">
-						<ul style="    color: #ffffff !important;font-size: 18px;font-family: Poppins, sans-serif;font-weight: 500;">
+						<ul style="    color: #ffffff !important;font-size: 21px;font-family: Poppins, sans-serif;font-weight: 500;">
 							<li><a href="/">HOME</a></li>
  	 							<li>
                                                         <a href="#">WHO WE ARE</a>
@@ -193,7 +213,7 @@ ul li {
 
 			<!-- Two -->
 				<section id="two" class="spotlight style2 right">
-					<span class="image fit main"><img src="{% static 'casonakshi-about-us2.jpg' %}" alt="" /></span>
+					<span class="image fit main"><img src="{% static 'casonakshi-about-us21.jpg' %}" alt="" /></span>
 					<div class="content">
 						<header>
 							<h2>About Us</h2>
@@ -290,7 +310,7 @@ ul li {
 						<form method="post" action="#" class="cta">
 							<div class="row gtr-uniform gtr-50">
 								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-								<div class="col-4 col-12-xsmall"><input type="submit" value="Get Started" class="fit primary" /></div>
+								<div class="col-4 col-12-xsmall"><input type="submit" value="Get Started" class="fit primary submit-btn" style="color: #000 !important;" /></div>
 							</div>
 						</form>
 					</div>
