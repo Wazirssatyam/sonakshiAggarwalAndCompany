@@ -6,5 +6,9 @@ from sonakshi import views
 
 urlpatterns = [
     path('',views.index,name="index"),
-    path('elements/',views.index,name="elements"),
+    path('contact/',views.contact,name="contact"),
+path('act/',views.act, name="act"),
+path('about/',views.about, name="about"),
+path('services/',views.services,name="services"),
+path('team/',views.team,name="team"),
 ]

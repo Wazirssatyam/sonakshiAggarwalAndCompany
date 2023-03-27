@@ -1,0 +1,17 @@
+[Unit]
+Description=gunicorn daemon
+Requires=sonakshigunicorn.socket
+After=network.target
+
+[Service]
+User=sonakshi-company
+Group=www-data
+WorkingDirectory=/home/sonakshi-company/sonakshiAggarwal
+ExecStart=/home/sonakshi-company/sonakshiAggarwal/env/bin/gunicorn \
+          --access-logfile - \
+          --workers 3 \
+          --bind unix:/run/sonakshigunicorn.sock \
+          sonakshiAggarwalAndCompany.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
