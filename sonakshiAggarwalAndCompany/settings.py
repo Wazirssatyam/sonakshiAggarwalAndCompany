@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-61g+$7q1u6$7n(zm5$7ith%m9x)%=uo88w&#qtudv_)fyt*6c0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['139.84.171.241','127.0.0.1','casonakshi.com','www.casonakshi.com']
 
 
 # Application definition
@@ -101,6 +101,10 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+# MAILCHIMP CREDENTIALS
+MAILCHIMP_API_KEY = "8c44484588866af416b38c6eb20b1861-us11"
+MAILCHIMP_DATA_CENTER = "us11"
+MAILCHIMP_EMAIL_LIST_ID = "67b3c44c59"
 
 
 # Internationalization
@@ -119,8 +123,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR ,"static")]
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATICFILES_DIRS = [os.path.join(BASE_DIR ,"static")]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = "/media/"
 # MEDIA_URL = 'http://127.0.0.1:8000/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR ,"media")

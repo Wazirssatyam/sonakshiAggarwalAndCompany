@@ -1,0 +1,136 @@
+{% extends  'index.html'   %}
+{% block content %}
+{% load static %}
+<style>
+  .contact-form{
+    margin-bottom: 3%;
+  }
+  .google-map{
+    border:0;
+    width: 100%;
+    height: 270px;
+  }
+  .button-3 {
+    appearance: none;
+    background-color: #2ea44f;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Poppins,sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 9px 19px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .button-3:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .button-3:hover {
+    box-shadow: inset 2px -2px 4px 2px rgba(255, 255, 255, 0.3) !important;
+    transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
+  }
+  
+  .button-3:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+  }
+  
+  .button-3:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+  }
+  
+  .button-3:active {
+    background-color: #298e46;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+  }
+</style>
+<section id="contact" class="contact" style="margin-top: 6%;">
+    <div class="container">
+
+      <div style="margin-bottom:4%;">
+        {% comment %} <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.0371215923155!2d77.03645822553803!3d28.418136726538105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d23584de5a6e1%3A0xe2343cd7ef49aa61!2sWazirs%20Securities%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1678451564959!5m2!1sen!2sin"  frameborder="0" allowfullscreen></iframe> {% endcomment %}
+        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d56166.63863903933!2d77.0130506!3d28.3765335!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d23997f5b5c69%3A0x62e9984f5a94f1e0!2sSonakshi%20Aggarwal%20%26%20Company!5e0!3m2!1sen!2sin!4v1680075182173!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="row mt-5">
+
+        <div class="col-lg-4">
+          <div class="info" style="width: 80%;    margin-right: 35px;">
+            <div class="address">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+      <h4>Location: </h4>
+              <p style="   width: 80%;">Unit No. 612, 6th Floor, Spaze Boulevard, Sector 47, Sohna Road, Gurugram, Haryana</p>
+            </div>
+
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>Sonakshi.rka@gmail.com</p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>+917840006821</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-8 mt-5 mt-lg-0 support-form">
+
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row contact-form">
+              <div class="col-md-6 form-group contact-form">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0 contact-form">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3 contact-form">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3 contact-form">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            {% comment %} <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message" style="text-align: center;">Your message has been sent. Thank you!</div>
+            </div> {% endcomment %}
+            <div class="text-center" style="text-align:center;"><button class="button-3" role="button" type="submit">Send Message</button></div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+  {% endblock%}
+
+
+
+
+<!-- HTML !-->

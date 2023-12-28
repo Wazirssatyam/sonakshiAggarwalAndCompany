@@ -930,7 +930,6 @@ input, select, textarea {
 				box-sizing: border-box;
 				align-items: stretch;
 			}
-
 				.row > * {
 					box-sizing: border-box;
 				}
@@ -1658,7 +1657,14 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
+			.nav-pannel{
+				margin-top: 40px;
+			}
+			.sonakshi-intro{
+				font-size: 27px;
+			}
+			
+			
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -1856,6 +1862,7 @@ input, select, textarea {
 
 					.row > * {
 						padding: 0 0 0 2.5em;
+					    padding-left: 4%;
 					}
 
 					.row.gtr-uniform {
@@ -1903,7 +1910,30 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 480px) {
+			.nav-pannel{
+				margin-top: 40px;
+			}
+			.sonakshi-intro{
+				font-size: 14px !important;
+				font-family: Poppins,sans-serif;
+			}
 
+			.sonakshi-header{
+				width: 100% !important;
+			}
+			.services-icons {
+				text-align: left !important;
+    			font-size: 16px !important;
+			}
+			.info{
+				margin-left: 10px !important;
+			}
+			.support-form{
+				width: 90% !important;
+				margin-left: 10px !important;
+			
+			}
+			
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -2186,7 +2216,7 @@ input, select, textarea {
 	}
 
 		header.major:after {
-			background: #e44c65;
+			background: #f9f871;
 			content: '';
 			display: inline-block;
 			height: 0.2em;
@@ -3117,7 +3147,7 @@ input, select, textarea {
 		}
 
 		.spotlight.bottom .content {
-			border-top-width: 0.35em;
+			border-top-width: 2px;
 			bottom: 0;
 		}
 
@@ -3129,17 +3159,17 @@ input, select, textarea {
 		}
 
 		.spotlight.left .content {
-			border-right-width: 0.35em;
+			border-right-width: 4px;
 			left: 0;
 		}
 
 		.spotlight.right .content {
-			border-left-width: 0.35em;
+			border-left-width: 4px;
 			right: 0;
 		}
 
 		.spotlight.style1 .content {
-			border-color: #e44c65;
+			border-color: #f9f871;
 		}
 
 		.spotlight.style2 .content {
@@ -3340,7 +3370,7 @@ input, select, textarea {
 			}
 
 			.dropotron > li.active > a, .dropotron > li.active > span {
-				color: #e44c65;
+				color: #f9f871;
 			}
 
 		.dropotron.level-0 {
@@ -3658,6 +3688,9 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
+			.vision-about{
+				margin-bottom: 6%  !important;
+			}
 
 		/* Spotlight */
 
@@ -3740,7 +3773,23 @@ input, select, textarea {
 			#footer {
 				padding: 4.5em 0;
 			}
-
+.ca-header-company{
+	font-size: 24px !important;
+    font-family: Poppins,sans-serif !important;
+    letter-spacing: 4px !important;
+    font-weight: bold !important;
+	margin-bottom: 0px !important;
+}
+.ca-header{
+	position: relative !important;
+    font-size: 14px !important;
+    margin-left: 7px !important;
+    font-weight: bold !important;
+    top: 0px !important;
+}
+.company-name-front{
+	margin-bottom: 10% !important;
+}
 	}
 
 /* Small */
@@ -3752,21 +3801,25 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
-
 			html, body {
 				overflow-x: hidden;
 			}
-
+			ul {
+				padding-left: 0px;
+			}
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
 
+
 			h2 {
-				font-size: 1.5em;
+				font-size: 30px;
+    			font-weight: bold;
 			}
 
 			h3 {
-				font-size: 1.2em;
+				font-size: 14px !important;
+				letter-spacing: 1.5px;
 			}
 
 			h4 {
@@ -3774,13 +3827,14 @@ input, select, textarea {
 			}
 
 		/* Section/Article */
-
+			
 			header p br {
 				display: none;
 			}
 
 			header h2 + p {
-				font-size: 1em;
+			   font-size: 17px;
+				text-align: -webkit-center !important;
 			}
 
 			header h3 + p {
@@ -3804,6 +3858,7 @@ input, select, textarea {
 				margin: -0.4em 0 0 -0.6em;
 				width: 1.2em;
 			}
+			
 
 		/* Spotlight */
 
@@ -3848,7 +3903,7 @@ input, select, textarea {
 				}
 
 					#banner .content header h2 {
-						font-size: 1.5em;
+						font-size: 27px !important;
 					}
 
 					#banner .content .image {
@@ -3887,7 +3942,7 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: #272833;
+				background: #bdbdbd6e !important;
 				box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
 			}
 
@@ -3913,6 +3968,7 @@ input, select, textarea {
 					top: 0;
 					width: 90px;
 					outline: 0;
+					box-shadow: none !important;
 					border: 0;
 				}
 
@@ -3930,8 +3986,8 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #e44c65;
-						color: rgba(255, 255, 255, 0.5);
+						background: #062f44;
+						color: #ffffff;
 						content: '\f0c9';
 						display: block;
 						font-size: 18px;
@@ -3965,7 +4021,7 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #181920;
+				background: #062f44;
 				padding: 0.75em 1.25em;
 			}
 
